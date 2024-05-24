@@ -1,0 +1,26 @@
+.box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  background-color: red;
+}
+.animation {
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animation {
+  0% {
+  }
+  50% {
+    left: 75%;
+  }
+  100% {
+    top: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+    <title>Madeleine</title>
+  </head>
+  <body>
+    <div class="titleDiv">
+      <h1>Madeleine</h1>
+    </div>
+    <div class="container">
+      {{range .}}
+      <div class="items">
+      <a href="{{.Url}}" method="POST">{{.Name}}</a>
+      </div>
+      {{end}}
+    </div>
+  </body>
+</html>

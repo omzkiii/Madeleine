@@ -1,0 +1,76 @@
+body {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+}
+
+.sun {
+  /* Define the initial styles */
+  background-color: yellow;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+.mercury {
+  /* Define the initial styles */
+  position: relative;
+  top: -100px;
+  background-color: olivedrab;
+  border-radius: 100%;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.venus {
+  /* Define the initial styles */
+  position: relative;
+  top: -200px;
+  background-color: orange;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+.earth {
+  /* Define the initial styles */
+  position: relative;
+  top: -300px;
+  background-color: skyblue;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+.moon {
+  /* Define the initial styles */
+  position: relative;
+  top: -20px;
+  background-color: grey;
+  border-radius: 100%;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+.mars {
+  /* Define the initial styles */
+  position: relative;
+  top: -400px;
+  background-color: red;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.animate-orbit {
+  animation-name: orbitAnimation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes orbitAnimation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
